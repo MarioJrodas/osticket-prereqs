@@ -252,7 +252,7 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 
 ---
 
-![a45](https://github.com/user-attachments/assets/8e99c021-9e0f-4f80-bb1b-bffd5874dbef)
+![image](https://github.com/user-attachments/assets/5646f022-6546-448d-9414-630b482f7555)
 
 ---
 
