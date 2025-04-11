@@ -27,23 +27,23 @@ This tutorial outlines the steps I used to set up a ticketing system and how you
 
 1.	Open Azure and navigate to Virtual Machines.
 
-	2-	Click Create a Virtual Machine.
+	2-	Click create a virtual machine 
 
-	3-	Choose or create a Resource Group (name it as you prefer)
+	3-	Choose or create a Resource Group (name it what you want)
 
-	4-	Select your Region
+	4-	Pick your Region
 
-	5-	Under Image, choose Windows 10 Pro.
+	5-	Under Image  choose Windows 10 Pro.
 
-	6-	Select an appropriate size of memory (I recommend at least 2 vCPUs for better performance.)
+	6-	Select an appropriate size of memory 
 
 	7-	Create a Username and Password (example: labuser and Cyberlab123!).
 
 	8-	Complete the remaining settings as needed, then click Create to deploy the virtual machine.
 
-	9-	Once the VM is up and running, navigate to its home screen and locate the Public IP Address.
+	9-	Once the VM is up and running, go to its home screen and locate the Public IP Address.
 
- 10-	Use Remote Desktop (RDP) to connect to the virtual machine using the public IP, along with the username and password you created.
+ 10-	Use Remote Desktop (RDP) to connect to the virtual machine using the public IP along with the username and password you created.
 
 ---
 
@@ -69,7 +69,7 @@ Step 1.	Download and Extract osTicket
 	- Open Windows Explorer and copy this link into the address bar:
 osTicket zip
 
-	- Download and extract the files to the Desktop.
+	- Download and extract the files to the Desktop
 ---
 
 ![ade6](https://github.com/user-attachments/assets/26d615d1-f899-4432-bafa-0bd76f8f80f9)
@@ -79,12 +79,12 @@ osTicket zip
 
 Step 2.	Install IIS with CGI
 
-	- Click Start, then open the Control Panel.
-	- Go to Programs, then click Turn Windows features on or off.
-	- Navigate to:
-Internet Information Services (IIS) > World Wide Web Services > Application and Development Features.
+	- Click Start, then open the Control Panel
+	- Go to Programs, then click Turn Windows features on or off
+	- Navigate to
+Internet Information Services (IIS) > World Wide Web Services > Application and Development Features
 
-	- Check the box for CGI, then click OK.
+	- Check the box for CGI, then click OK
 ---
 
 ![ade9](https://github.com/user-attachments/assets/8c73396f-63af-4535-9a69-0c8b041ae979)
@@ -95,8 +95,8 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 
 Step 3.	Install PHP Manager and Rewrite
 
-	- Inside the osTicket folder, download PHP Manager and URL Rewrite.
-	- Follow the installation prompts and accept all terms.
+	- Inside the osTicket folder, download PHP Manager and URL Rewrite
+	- Follow the installation prompts and accept all terms
 
 ---
 
@@ -106,17 +106,17 @@ Step 3.	Install PHP Manager and Rewrite
 
 Step 4.	Set Up PHP
    
-	- Navigate to the C:\ drive and create a new folder named PHP.
-	- Go back to the downloaded zip file, extract its contents, and find the PHP folder.
-	- Move the extracted PHP files into C:\PHP.
+	- Navigate to the C:\ drive and create a new folder named PHP
+	- Go back to the downloaded zip file, extract its contents, and find the PHP folder
+	- Move the extracted PHP files into C:\PHP
 
 Step 5.	Install Required Dependencies
    
 	-	Install VC_redist.x86.
-	- Install MySQL using the Typical Setup option.
-	- Launch the MySQL Configuration Wizard and select Standard Configuration.
-	- Important: Use the same Username and Password for MySQL (e.g., ROOT in all caps).
-	- Click Next, then Execute to complete the setup.
+	- Install MySQL using the Typical Setup option
+	- Launch the MySQL Configuration Wizard and select Standard Configuration
+	- Important Use the same Username and Password for MySQL (ROOT in all caps).
+	- Click Next then Execute to complete the setup.
 
 ---
 
@@ -129,9 +129,9 @@ Step 5.	Install Required Dependencies
 Step 6.	Configure IIS for PHP
    
 	- Open IIS as Admin
-	- Click PHP Manager, then select Register New PHP Version.
-	- Locate the PHP folder on the C:\ drive, open it, and select the php-cgi.exe file.
-	- Click OK, then restart IIS.
+	- Click PHP Manager, then select Register New PHP Version
+	- Locate the PHP folder on the C:\ drive, open it, and select the php-cgi.exe file
+	- Click OK, then restart IIS
 
 ---
 
