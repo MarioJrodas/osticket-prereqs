@@ -47,18 +47,24 @@ This tutorial outlines the steps I used to set up a ticketing system and how you
 
 ---
 
- 
-![ade1](https://github.com/user-attachments/assets/d4fb92ed-bfff-4a5d-8360-129bbbc8e1d6)
-![ade2](https://github.com/user-attachments/assets/4cf99ac6-b259-4c49-95f7-71f864e9f6e8)
-![ade3](https://github.com/user-attachments/assets/094eb878-0b0f-474c-9902-4293cb6de831)
-![a4](https://github.com/user-attachments/assets/693dddb3-c309-45e4-b363-98ff9a773473)
-![ade5](https://github.com/user-attachments/assets/7e0a10f7-3440-4834-ab3c-5043f76a0e0a)
+
+ ![Create a VM ](https://github.com/user-attachments/assets/8530eeeb-64a0-408e-9ba7-864f7973344b)
+
+![VM name ](https://github.com/user-attachments/assets/eefc8bd5-6dea-49fb-9cda-1dce61ad6d38)
+![Labuser photo](https://github.com/user-attachments/assets/0c24f9e2-0075-473d-a079-2dbb3b1b336c)
+![Create vm screen](https://github.com/user-attachments/assets/7d488446-79f2-4198-9aff-3f6cd89ff6a9)
+
+
+![VM ipaddress](https://github.com/user-attachments/assets/55a7b0be-a0e7-4333-912f-0ea0feea8a64)
+
+
+
 
 ---
 
 <h2> OSTicket Installation </h2>
 
-1.	Download and Extract osTicket
+Step 1.	Download and Extract osTicket
 
 	- Open Windows Explorer and copy this link into the address bar:
 osTicket zip
@@ -71,7 +77,7 @@ osTicket zip
 
 ---
 
-2.	Install IIS with CGI
+Step 2.	Install IIS with CGI
 
 	- Click Start, then open the Control Panel.
 	- Go to Programs, then click Turn Windows features on or off.
@@ -87,7 +93,7 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 
 ---
 
-3.	Install PHP Manager and Rewrite
+Step 3.	Install PHP Manager and Rewrite
 
 	- Inside the osTicket folder, download PHP Manager and URL Rewrite.
 	- Follow the installation prompts and accept all terms.
@@ -98,13 +104,13 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 
 ---
 
-4.	Set Up PHP
+Step 4.	Set Up PHP
    
 	- Navigate to the C:\ drive and create a new folder named PHP.
 	- Go back to the downloaded zip file, extract its contents, and find the PHP folder.
 	- Move the extracted PHP files into C:\PHP.
 
-5.	Install Required Dependencies
+Step 5.	Install Required Dependencies
    
 	-	Install VC_redist.x86.
 	- Install MySQL using the Typical Setup option.
@@ -120,9 +126,9 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 ---
 
 
-6.	Configure IIS for PHP
+Step 6.	Configure IIS for PHP
    
-	- Open IIS as Administrator.
+	- Open IIS as Admin
 	- Click PHP Manager, then select Register New PHP Version.
 	- Locate the PHP folder on the C:\ drive, open it, and select the php-cgi.exe file.
 	- Click OK, then restart IIS.
@@ -136,10 +142,10 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 
 ---
 
-7.	Configure osTicket in IIS
+Step 7.	Configure osTicket in IIS
    
 	- Go back to the osTicket installation folder and extract all files.
-	- Open the extracted folder and copy the upload folder to: C:\inetpub\wwwroot.
+	- Open the extracted folder and copy the upload folder to: C:\inetpub\wwwroot
 	- Rename the folder to osTicket (exact spelling, including capitalization).
 	- Restart IIS.
 
@@ -149,7 +155,7 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 ![ade18](https://github.com/user-attachments/assets/4ee9906a-88cd-416d-9c59-ae99587ab691)
 
 ---
-8.	Launch osTicket
+Step 8.	Launch osTicket
    
 	- In IIS, open Sites, then select Default Web Site.
 	- Click Browse osTicket, and it should open successfully.
