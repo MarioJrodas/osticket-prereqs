@@ -269,7 +269,6 @@ Step 8.	Launch osTicket
 ---
 
 ![ade29](https://github.com/user-attachments/assets/785e3831-02ce-4426-bce4-df0e789887df)
-![a47](https://github.com/user-attachments/assets/6df54d2e-4812-4ba0-8922-4a2cbc048506)
 
 ---
 
