@@ -23,17 +23,17 @@ This tutorial outlines the steps I used to set up a ticketing system and how you
 
 - Windows 10</b> (21H2)
 
-<h2> VM Set up  </h2>
+<h2> Virtual Machine Set up  </h2>
 
 1.	Open Azure and navigate to Virtual Machines.
 
-	2-	Click create a virtual machine 
+	2-	Click Create a virtual machine 
 
-	3-	Choose or create a Resource Group (name it what you want)
+	3-	Choose or create a Resource Group 
 
 	4-	Pick your Region
 
-	5-	Under Image  choose Windows 10 Pro.
+	5-	Under Image, pick  Windows 10 Pro.
 
 	6-	Select an appropriate size of memory 
 
@@ -41,9 +41,9 @@ This tutorial outlines the steps I used to set up a ticketing system and how you
 
 	8-	Complete the remaining settings as needed, then click Create to deploy the virtual machine.
 
-	9-	Once the VM is up and running, go to its home screen and locate the Public IP Address.
+	9-	Once the VM is running, go to its home screen and locate the Public IP Address.
 
- 10-	Use Remote Desktop (RDP) to connect to the virtual machine using the public IP along with the username and password you created.
+ 10-	Use Remote Desktop to connect to the virtual machine using the public IP address along with the username and password you created.
 
 ---
 
@@ -66,10 +66,10 @@ This tutorial outlines the steps I used to set up a ticketing system and how you
 
 Step 1.	Download and Extract osTicket
 
-	- Open Windows Explorer and copy this link into the address bar:
+- Open Windows Explorer and copy this link into the address bar:
 osTicket zip
 
-	- Download and extract the files to the Desktop
+- Download and extract the files to the Desktop
 ---
 
 ![ade6](https://github.com/user-attachments/assets/26d615d1-f899-4432-bafa-0bd76f8f80f9)
@@ -79,12 +79,13 @@ osTicket zip
 
 Step 2.	Install IIS with CGI
 
-	- Click Start, then open the Control Panel
-	- Go to Programs, then click Turn Windows features on or off
-	- Navigate to
+- Click Start, then open the Control Panel
+- Go to Programs, then click Turn Windows features on or off
+- Navigate to
+
 Internet Information Services (IIS) > World Wide Web Services > Application and Development Features
 
-	- Check the box for CGI, then click OK
+- Check the box for CGI, then click OK
 ---
 
 ![ade9](https://github.com/user-attachments/assets/8c73396f-63af-4535-9a69-0c8b041ae979)
@@ -95,8 +96,8 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 
 Step 3.	Install PHP Manager and Rewrite
 
-	- Inside the osTicket folder, download PHP Manager and URL Rewrite
-	- Follow the installation prompts and accept all terms
+- Inside the osTicket folder, download PHP Manager and URL Rewrite
+- Follow the installation prompts and accept all terms
 
 ---
 
@@ -106,17 +107,17 @@ Step 3.	Install PHP Manager and Rewrite
 
 Step 4.	Set Up PHP
    
-	- Navigate to the C:\ drive and create a new folder named PHP
-	- Go back to the downloaded zip file, extract its contents, and find the PHP folder
-	- Move the extracted PHP files into C:\PHP
+- Navigate to the C:drive and create a new folder named PHP
+- Go back to the downloaded zip file, extract its contents, and find the PHP folder
+- Move the extracted PHP files into C:PHP
 
 Step 5.	Install Required Dependencies
    
-	-	Install VC_redist.x86.
-	- Install MySQL using the Typical Setup option
-	- Launch the MySQL Configuration Wizard and select Standard Configuration
-	- Important Use the same Username and Password for MySQL (ROOT in all caps).
-	- Click Next then Execute to complete the setup.
+- Install VC_redist.x86.
+- Install MySQL using the Typical Setup option
+- Launch the MySQL Configuration Wizard and select Standard Configuration
+- Use the same Username and Password for MySQL (ROOT in all caps).
+- Click Next then Execute to complete the setup.
 
 ---
 
@@ -128,10 +129,10 @@ Step 5.	Install Required Dependencies
 
 Step 6.	Configure IIS for PHP
    
-	- Open IIS as Admin
-	- Click PHP Manager, then select Register New PHP Version
-	- Locate the PHP folder on the C:\ drive, open it, and select the php-cgi.exe file
-	- Click OK, then restart IIS
+- Open IIS as Admin
+- Click PHP Manager, then select Register New PHP Version
+- Locate the PHP folder on the C:drive, open it, and select the php-cgi.exe file
+- Click OK, then restart IIS
 
 ---
 
@@ -144,10 +145,10 @@ Step 6.	Configure IIS for PHP
 
 Step 7.	Configure osTicket in IIS
    
-	- Go back to the osTicket installation folder and extract all files.
-	- Open the extracted folder and copy the upload folder to: C:\inetpub\wwwroot
-	- Rename the folder to osTicket (exact spelling, including capitalization).
-	- Restart IIS.
+- Go back to the osTicket installation folder and extract all files.
+- Open the extracted folder and copy the upload folder to: C:inetpub\wwwroot
+- Rename the folder to osTicket (exact spelling, including capitalization).
+- Restart IIS.
 
 ---
 ![ade16](https://github.com/user-attachments/assets/2a23b13b-b6a8-4392-91d6-5cacddb3937e)
@@ -157,8 +158,8 @@ Step 7.	Configure osTicket in IIS
 ---
 Step 8.	Launch osTicket
    
-	- In IIS, open Sites, then select Default Web Site.
-	- Click Browse osTicket, and it should open successfully.
+- In IIS, open Sites, then select Default Web Site.
+- Click Browse osTicket, and it should open successfully.
 
 ---
 
@@ -206,10 +207,10 @@ Step 8.	Launch osTicket
 ![ade25](https://github.com/user-attachments/assets/60a8db73-7990-4f61-b0f8-7af09b7d89fe)
 
 ---
-	- Go to Security > Advanced.
-	- Click Disable Inheritance, then Remove all entries.
-	- Click Select a Principal, type Everyone, then check Full Control.
-	- Click OK to apply the changes.
+- Go to Security > Advanced.
+- Click Disable Inheritance, then Remove all entries.
+- Click Select a Principal, type Everyone, then check Full Control.
+- Click OK to apply the changes.
 
 - Complete osTicket Installation
 
@@ -238,8 +239,8 @@ Step 8.	Launch osTicket
 
 - Create the osTicket Database
 
-	-	Once connected, right-click Unnamed and select Create New > Database.
-	- Name it osTicket (exact spelling).
+- Once connected, right-click Unnamed and select Create New > Database.
+- Name it osTicket (exact spelling).
 ---
 
 ![ade27](https://github.com/user-attachments/assets/0229ac6f-8371-407b-b327-7a4f0bfb9527)
