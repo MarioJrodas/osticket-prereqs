@@ -4,18 +4,17 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the steps I used to set up a ticketing system and how you could do it aswell..<br />
+This practice outlines the steps I used to set up a ticketing system and how you could do it too!
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure Virtual Machine
-- Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop (RDP)
 - Internet Information Services (IIS)
 
 <h2>Environments Used </h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure Virtual Machine
 - Remote Desktop
 - Internet Information Services (IIS)
   
@@ -25,25 +24,25 @@ This tutorial outlines the steps I used to set up a ticketing system and how you
 
 <h2> Virtual Machine Set up  </h2>
 
-1.	Open Azure and navigate to Virtual Machines.
+1.	Go to Microsoft Azure and find Virtual Machines.
 
 	2-	Click Create a virtual machine 
 
-	3-	Choose or create a Resource Group 
+	3-	Create a Resource Group (osTicket-lab
 
-	4-	Pick your Region
+	4-	Pick your Region (East US 2)
 
 	5-	Under Image, pick  Windows 10 Pro.
 
-	6-	Select an appropriate size of memory 
+	6-	Select any size of memory (8Gib or the cheapest) 
 
-	7-	Create a Username and Password (example: labuser and Cyberlab123!).
+	7-	Make a Username and Password (example: labuser and Cyberlab123!).
 
 	8-	Complete the remaining settings as needed, then click Create to deploy the virtual machine.
 
-	9-	Once the VM is running, go to its home screen and locate the Public IP Address.
+	9-	Once the VM is up, go to its home screen and locate the Public IP Address.
 
- 10-	Use Remote Desktop to connect to the virtual machine using the public IP address along with the username and password you created.
+       10-	Use Remote Desktop to connect to the virtual machine using the public IP address along with the username and password you created.
 
 ---
 
@@ -67,7 +66,7 @@ This tutorial outlines the steps I used to set up a ticketing system and how you
 Step 1.	Download and Extract osTicket
 
 - Open Windows Explorer and copy this link into the address bar:
-osTicket zip
+https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
 
 - Download and extract the files to the Desktop
 ---
@@ -97,7 +96,7 @@ Internet Information Services (IIS) > World Wide Web Services > Application and 
 Step 3.	Install PHP Manager and Rewrite
 
 - Inside the osTicket folder, download PHP Manager and URL Rewrite
-- Follow the installation prompts and accept all terms
+- Follow the installation steps and accept all terms
 
 ---
 
@@ -219,7 +218,7 @@ Step 8.	Launch osTicket
 - Install HeidiSQL
 
     - Open the osTicket installation folder and install HeidiSQL.
-    - Follow the installation steps and ensure Launch when done is checked.
+    - Follow the installation steps and click Launch when done is checked.
     - Open HeidiSQL and create a new session.
       
 	 - Enter:
