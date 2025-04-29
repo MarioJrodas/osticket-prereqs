@@ -11,7 +11,7 @@ This practice outlines the steps I used to set up a ticketing system and how you
 - Microsoft Azure Virtual Machine
 - Remote Desktop (RDP)
 - Internet Information Services (IIS)
-
+- osTicket os
 <h2>Environments Used </h2>
 
 - Microsoft Azure Virtual Machine
