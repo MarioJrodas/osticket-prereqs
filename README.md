@@ -36,13 +36,13 @@ This practice outlines the steps I used to set up a ticketing system and how you
 
 	6-	Select any size of memory (8Gib or the cheapest) 
 
-	7-	Make a Username and Password (example: labuser and Cyberlab123!).
+	7-	Make a Username and Password 
 
-	8-	Complete the remaining settings as needed, then click Create to deploy the virtual machine.
+	8-	Click Create to deploy the virtual machine.
 
-	9-	Once the VM is up, go to its home screen and locate the Public IP Address.
+	9-	Once the VM is runnig head to the home screen and find the Public IP Address.
 
-       10-	Use Remote Desktop to connect to the virtual machine using the public IP address along with the username and password you created.
+       10-	Use Remote Desktop to connect to the virtual machine using the public IP address with the username and password you created.
 
 ---
 
